@@ -1,0 +1,22 @@
+## General
+.cvs
+.htaccess
+.svn
+*.bak
+*.log
+*.swp
+secrets.rb
+
+## Windows
+Desktop.ini
+Thumbs.db
+
+## Mac
+.DS_Store
+
+## Development
+.sass-cache
+vendor
+.bundle
+*.pem
+login_ec2
