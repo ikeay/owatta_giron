@@ -1,8 +1,6 @@
 引用ツイートをやめてもらうためのBOT
 ====
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
-
 ## 概要
 先日、とある炎上案件に同情めいたコメントをしたらTwitterが炎上した。  
 その後数日間、クソリプおじさんや俺の意見おじさんの引用ツイートがうるさかったのでつくったBOTです。  
@@ -12,10 +10,11 @@
 
 ## 使い方
 		$ bundle install --path vendor/bundle
-		$ bundle exec ruby main.rb
+		$ bundle exec clockwork clock.rb
 
-HerokuにあげるときのためのダミーアプリとしてSinatraを入れています。   
-HerokuではHeroku Schedulerで``ruby main.rb``を定期実行させてください。
+Herokuにはこちらのボタンでデプロイできます。
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## クソコード by
 [ikeay](https://github.com/ikeay)
