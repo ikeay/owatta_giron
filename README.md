@@ -1,6 +1,8 @@
 引用ツイートをやめてもらうためのBOT
 ====
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 ## 概要
 先日、とある炎上案件に同情めいたコメントをしたらTwitterが炎上した。  
 その後数日間、クソリプおじさんや俺の意見おじさんの引用ツイートがうるさかったのでつくったBOTです。  
