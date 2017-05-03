@@ -30,6 +30,12 @@
     },
     "OUTPUT_OAUTH_TOKEN_SECRET": {
       "description": "Twitter OAuth Token secret of 注意する人"
+    },
+    "TZ": {
+      "value": "Asia/Tokyo"
+    },
+    "LANG": {
+      "value": "ja_JP.UTF-8"
     }
   },
   "formation": {
