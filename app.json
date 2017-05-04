@@ -1,0 +1,48 @@
+{
+  "name": "Owatta Giron",
+  "description": "引用ツイートをやめてもらうためのBOT",
+  "repository": "https://github.com/ikeay/owatta_giron",
+  "logo": "https://avatars3.githubusercontent.com/u/1245781",
+  "env": {
+    "TWEET_URL": {
+      "description": "引用されて困っているツイートのURL"
+    },
+    "INPUT_CONSUMER_KEY": {
+      "description": "Consumer key of 困っている人"
+    },
+    "INPUT_CONSUMER_SECRET": {
+      "description": "Twitter Consumer secret of 困っている人"
+    },
+    "INPUT_OAUTH_TOKEN" : {
+      "description": "Twitter OAuth Token of 困っている人"
+    },
+    "INPUT_OAUTH_TOKEN_SECRET": {
+      "description": "Twitter OAuth Token secret of 困っている人"
+    },
+    "OUTPUT_CONSUMER_KEY": {
+      "description": "Twitter Consumer key of 注意する人"
+    },
+    "OUTPUT_CONSUMER_SECRET": {
+      "description": "Twitter Consumer secret of 注意する人"
+    },
+    "OUTPUT_OAUTH_TOKEN": {
+      "description": "Twitter OAuth Token of 注意する人"
+    },
+    "OUTPUT_OAUTH_TOKEN_SECRET": {
+      "description": "Twitter OAuth Token secret of 注意する人"
+    },
+    "TZ": {
+      "value": "Asia/Tokyo"
+    },
+    "LANG": {
+      "value": "ja_JP.UTF-8"
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "image": "heroku/ruby"
+}
