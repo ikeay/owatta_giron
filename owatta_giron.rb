@@ -1,11 +1,12 @@
 require 'twitter'
+require 'dotenv/load'
 
 class OwattaGiron
   def initialize
 # REST API
 # 注意用アカウントのキー
     @client_rest = Twitter::REST::Client.new do |config|
-      config.consumer_key        = ENV.fetch('OUTPUT_CONSUMER_KEY') 
+      config.consumer_key        = ENV.fetch('OUTPUT_CONSUMER_KEY')
       config.consumer_secret     = ENV.fetch('OUTPUT_CONSUMER_SECRET')
       config.access_token        = ENV.fetch('OUTPUT_OAUTH_TOKEN')
       config.access_token_secret = ENV.fetch('OUTPUT_OAUTH_TOKEN_SECRET')
@@ -14,7 +15,7 @@ class OwattaGiron
 # Streaming API
 # 引用ツイートに困っているアカウントのキー
     @client_stream = Twitter::Streaming::Client.new do |config|
-      config.consumer_key        = ENV.fetch('INPUT_CONSUMER_KEY')   
+      config.consumer_key        = ENV.fetch('INPUT_CONSUMER_KEY')
       config.consumer_secret     = ENV.fetch('INPUT_CONSUMER_SECRET')
       config.access_token        = ENV.fetch('INPUT_OAUTH_TOKEN')
       config.access_token_secret = ENV.fetch('INPUT_OAUTH_TOKEN_SECRET')
