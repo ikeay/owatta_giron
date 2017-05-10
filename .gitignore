@@ -1,5 +1,6 @@
 ## General
 .cvs
+.env
 .htaccess
 .svn
 *.bak
